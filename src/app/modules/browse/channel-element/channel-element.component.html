@@ -1,0 +1,20 @@
+<div [className]="'preview'" >
+  <img src={{stream.preview.medium}}/>
+  <span [className]="'viewers'">{{stream.viewers | number }} viewer </span>
+</div>
+<div [className]="'channelDetail'">
+  <div>
+    <img [className]="'channelIcon'" src={{stream.channel.logo}}/>
+  </div>
+  <div [className]="'channelInformation'">
+    <div [className]="'channelName'">
+      {{stream.name}}
+    </div>
+    <div [className]="'minorDetail'">
+      {{stream.channel.name}}
+    </div>
+    <div [className]="'minorDetail'">
+      {{stream.game}}
+    </div>
+  </div>
+</div>

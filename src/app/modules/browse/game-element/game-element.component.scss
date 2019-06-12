@@ -1,0 +1,19 @@
+
+.preview {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+.preview img {
+  width: 100%;
+}
+
+:host {
+    height: 350px;
+    max-width: 180px;
+    display: grid;
+    grid-template-rows: 260px 1fr;
+}

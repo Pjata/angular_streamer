@@ -1,0 +1,53 @@
+.preview {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+.preview img {
+  width: 100%;
+}
+.elementCenter {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.viewers {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: rgba(0,0,0,0.6);
+  color:white;
+  padding: 0px 8px;
+}
+
+.channelDetail {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  padding: 8px 4px;
+  grid-gap: 12px;
+}
+.channelIcon {
+  width: 100%;
+  border-radius: 50%;
+}
+.channelInformation {
+  display: grid;
+  grid-template-rows: 24px 18px 18px;
+  grid-gap: 4px;
+}
+
+.channelName {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.minorDetail {
+  font-size: 12px;
+}

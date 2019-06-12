@@ -1,0 +1,5 @@
+<div [className]="'gameGridContainer'">
+  <div [className]="'gameElement'" *ngFor="let game of games" (click)="onGameClick(game)">
+    <app-game-element [game]="game"></app-game-element>
+  </div>
+</div>

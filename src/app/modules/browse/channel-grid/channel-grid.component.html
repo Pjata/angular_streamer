@@ -1,0 +1,5 @@
+<div [className]="'browserContainer'">
+  <div [className]="'browserElement'" *ngFor="let stream of streams" (click)="onStreamClick(stream)">
+    <app-channel-element [stream]="stream"></app-channel-element>
+  </div>
+</div>

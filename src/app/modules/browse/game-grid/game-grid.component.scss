@@ -1,0 +1,17 @@
+
+.gameGridContainer {
+    width: 100%;
+    display: grid;
+    grid-gap: 20px;
+    padding: 0px 24px;
+    box-sizing:border-box;
+    grid-template-columns: repeat(auto-fill,minmax(180px,1fr));
+  }
+  
+  
+  :host {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+  }

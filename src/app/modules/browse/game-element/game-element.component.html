@@ -1,0 +1,13 @@
+<div [className]="'preview'" >
+  <img src={{game.box.medium}}/>
+</div>
+<div [className]="'channelDetail'">
+  <div [className]="'channelInformation'">
+    <div [className]="'channelName'">
+      {{game.name}}
+    </div>
+    <div [className]="'minorDetail'">
+     {{game.viewers | number }} viewer
+    </div>
+  </div>
+</div>

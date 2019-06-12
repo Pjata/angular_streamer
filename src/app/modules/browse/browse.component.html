@@ -1,0 +1,11 @@
+<mat-form-field>
+  <mat-label>Types</mat-label>
+  <mat-select [(value)]="selectedType">
+    <mat-option *ngFor="let type of types" [value]="type.value">
+      {{type.viewValue}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+
+<app-channel-grid *ngIf="selectedType === 'channels'" [streams]='streams' [onStreamClick]='onStreamClick'></app-channel-grid>
+<app-game-grid *ngIf="selectedType === 'games'" [games]='streams' [onGameClick]='onGameClick'></app-game-grid>
